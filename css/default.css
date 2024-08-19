@@ -1,5 +1,13 @@
 /* hi */
-main {
-	width: 50%;
+
+body {
+	background: lightskyblue;
+	width: 80%;
 	margin: 0 auto;
+	min-width: 80ch;
+}
+
+#message {
+	opacity:0;
+	transition:all 2s
 }
