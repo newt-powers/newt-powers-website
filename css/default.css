@@ -1,13 +1,59 @@
 /* hi */
 
 body {
-	background: lightskyblue;
+	background-color: lightskyblue;
 	width: 80%;
+	min-width: 800px;
 	margin: 0 auto;
-	min-width: 80ch;
+	max-width: 80ch;
+	padding: 0 1.5rem;
 }
 
 #message {
 	opacity:0;
 	transition:all 2s
+}
+
+#career {
+	/*put a box around the career title */
+	text-align: center;
+	border-style: solid;
+	border-width: medium;
+	border-radius: 5px;
+	background-color: #aaa;
+}
+
+nav ul {
+	/*remove bullet points */
+	list-style-type: none;
+	/*ul has padding in browsers, eliminate */
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	/*display the elements of the navbar on one line*/
+	display: inline;
+	margin: 0;
+	padding: 0;
+	/* eliminate spacing between items */
+	float: left;
+}
+
+nav a {
+	background-color: #ccc;
+	color: #111;
+	/* no underline*/
+	text-decoration: none;
+	padding: 8px;
+	text-align: center;
+	/*block container like <p> inside inline container of li*/
+	display: block;
+}
+
+nav a:hover {
+	/*white button color */
+	background-color: #fff;
+	/*text color*/
+	color: #333;
 }
