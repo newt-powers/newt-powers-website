@@ -6,141 +6,151 @@
 	<meta name="description" content="Newt Powers' portfolio">
 	<meta name="keywords" content="Electrical Engineering, Software, Hardware, LinkedIn, GitHub, Systems Engineering, Drone, Bridge, Global Development, Programming, Web Development, PCB Design">
 	<meta name="author" content="Newt Powers">
-	<link href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
 	<!--responsive web design-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Newt Powers</title>
 </head>
 
 <body>
-	<h1 style="text-align:center;">Newt Powers</h1>
 	<!-- <p style="font-size:30px; text-align:center">engineering in service of humanity<p> -->
-	<hr>
-<!--navbar with home, about, experience, skills, projects using <nav>, need to set up project directory first-->
-	<header>
-	<nav>
-		<a>Home</a>
-		<a>About</a>
-		<a>Experience</a>
-		<a>Skills</a>
-		<a>Projects</a>
-	</nav>
-</header>
-<main>
-<!--brief description about myself-->
-<pre>
-I'm Newt. 
-		
-I use she/they pronouns.
-		
-I'm a software developer.
-</pre>
+		<!-- <hr> -->
+		<!--navbar with home, about, experience, skills, projects using <nav>, need to set up project directory first-->
+		<header>
+			<h1 style="text-align:center;">Newt Powers</h1>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="javascript:;">About</a></li>
+					<li><a href="javascript:;">Experience</a></li>
+					<li><a href="javascript:;">Skills</a></li>
+					<li><a href="javascript:;">Projects</a></li>
+					<li><a href="docs/newt-website-resume.pdf" target="_blank">Resume</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<br>
+			<br>
+			<!--brief description about myself-->
+			<p>I'm Newt.
+			<br>
+			<br>
+			I use she/they pronouns. 
+			<br>
+			<br>
+			I'm a software developer.
+			</p>
 
-	<a href="https://www.github.com/newt-powers/">here's my github :3</a>
-	<br>
-	<br>
-	<a href="https://linkedin.com/in/newt-powers/" target="_blank">shameless plug linkedin profile link</a>
-	<br>
+			<a href="https://www.github.com/newt-powers/">here's my github :3</a>
+			<br>
+			<br>
+			<a href="https://linkedin.com/in/newt-powers/" target="_blank">shameless plug linkedin profile link</a>
+			<br>
 
-	<!--list of experiences, bulleted-->
-	<h2>Professional Experience</h2>
-	<div>
-		<h3>NASA, Electrical Engineering Intern</h3>
-		<ul>
-			<li>Implement a counting method to calculate and store accelerometer frequencies in 6 registers using VHDL to obtain more precise angle measurements for aeronautics applications</li>
-			<li>Write a script for SPI communication for a binary signal 96 bit MISO transmission to a microcontroller</li>
-		</ul>
-	</div>
-	<div>
-		<h3>RTX, Systems Engineering Intern</h3>
-		<ul>
-			<li>Performed AN/TPY-2 radar simulations utilizing Linux and reported errors to the hardware team</li>
-			<li>Developed a script to plot simulation objects to aid in future regression efforts for 10 deployed radars</li>
-			<li>Analyzed 6 MATLAB script errors to root cause issues to ensure test functionality for future analysts</li>
-		</ul>
-	</div>
-	<h2>Extracurricular Experience</h2>
-	<div>
-		<h3>Cornell University Autonomous Drone, Electrical Engineering Subteam Member</h3>
-		<ul>
-			<li>Breadboarded a motor control rig circuit and wrote a script in C++ that conducted thrust calculations with a potentiometer and an Arduino microcontroller</li>
-			<li>Analyzed a digital signal from a speed controller with an oscilloscope to find flaws in motor initiation</li>
-			<li>Programmed a virtual controller by emulating drone channels and sending data to a Raspberry Pi</li>
-			<li>Write test scripts in Python to test the GPIO pin outs of a Jetson Nano to ensure the correct pitch, yaw, and roll value</li>
-		</ul>
-	</div>
-	<div>
-		<h3>Cornell Engineers in Action, Project Manager, Quality Control Engineer</h3>
-		<ul>
-			<li>Built a 100 meter footbridge in Eswatini, Africa over 6 weeks while measuring tier heights, mixing concrete to the correct ratios, bending rebar, and documenting as-built dimensions for a drawing set</li>
-			<li>Lead 30 student team and craft weekly meeting plans while communicating review call deadlines,  writing legal chapter agreements, and helping raise over 20,000 dollars</li>
-			<li>Drafted abutment drawings in AutoCAD and modified anchor positioning to increase freeboard</li>
-		</ul>
-	</div>
-	<div>
-		<h3>SRJC Coding Club</h3>
-		<ul>
-			<li>Used HTML and CSS to build the club website</li>
-		</ul>
-	</div>
-	<h2>Projects</h2>
-	<div>
-		<h3>Holy Health</h3>
-		<ul>
-			<li>Built a website that helps people diet on religious holidays such as Ramadan and Yom Kippur</li>
-			<li>Designed and constructed a user dashboard and about page using HTML, CSS, and Bootstrap</li>
-			<li>Implemented functionality for user login with a Google account using Firebase and Javascript</li>
-		</ul>
-	</div>
-	<div>
-		<h3>Embedded Accelerometer Game</h3>
-		<ul>
-			<li>Mapped tilting of an on-board accelerometer to the horizontal motion of a spaceship avoiding asteroids with button interrupts for a reset button using C, transmitting data through a USB interface</li>
-			<li>Created a random spawn algorithm and collision logic for 8 game objects in Python using Pygame</li>
-		</ul>
-	</div>
-	<div>
-		<h3>Reaction Time Game and Microprocessor</h3>
-		<ul>
-			<li>Drew a 15 state finite state machine for a reaction time game, implemented sequential logic, and validated designs by writing test cases in Verilog, ultimately testing using the DE0-CV FPGA board</li>
-			<li>Designed and implemented a single cycle microprocessor by creating the ALU, register file, decoder, PC, IRAM, and DRAM components using Verilog</li>
-		</ul>
-	</div>
-	<h2>Research Experience</h2>
-	<div>
-		<h3>University of Colorado Boulder, Electrical Engineering Research Intern</h3>
-		<ul>
-			<li>Designed a printed circuit board for a Yagi-Uda antenna transceiver in Autodesk Eagle, placing electrical component pads and making connections to top and ground wires</li>
-			<li>Simulated a 10 director wire antenna design using 4nec2, resulting in a 43.8% increase in the horizontal gain, increasing the efficiency of signal transmission at the 150 MHz frequency</li>
-		</ul>
-	</div>
+			<!--list of experiences, bulleted-->
+			<h1 id="career">Career</h1>
+			<h2>Professional Experience</h2>
+			<div>
+				<h3>NASA, Electrical Engineering Intern</h3>
+				<ul>
+					<li>Implement a counting method to calculate and store accelerometer frequencies in 6 registers using VHDL to obtain more precise angle measurements for aeronautics applications</li>
+					<li>Write a script for SPI communication for a binary signal 96 bit MISO transmission to a microcontroller</li>
+				</ul>
+			</div>
+			<div>
+				<h3>RTX, Systems Engineering Intern</h3>
+				<ul>
+					<li>Performed AN/TPY-2 radar simulations utilizing Linux and reported errors to the hardware team</li>
+					<li>Developed a script to plot simulation objects to aid in future regression efforts for 10 deployed radars</li>
+					<li>Analyzed 6 MATLAB script errors to root cause issues to ensure test functionality for future analysts</li>
+				</ul>
+			</div>
+			<h2>Extracurricular Experience</h2>
+			<div>
+				<h3>Cornell University Autonomous Drone, Electrical Engineering Subteam Member</h3>
+				<ul>
+					<li>Breadboarded a motor control rig circuit and wrote a script in C++ that conducted thrust calculations with a potentiometer and an Arduino microcontroller</li>
+					<li>Analyzed a digital signal from a speed controller with an oscilloscope to find flaws in motor initiation</li>
+					<li>Programmed a virtual controller by emulating drone channels and sending data to a Raspberry Pi</li>
+					<li>Write test scripts in Python to test the GPIO pin outs of a Jetson Nano to ensure the correct pitch, yaw, and roll value</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Cornell Engineers in Action, Project Manager, Quality Control Engineer</h3>
+				<ul>
+					<li>Built a 100 meter footbridge in Eswatini, Africa over 6 weeks while measuring tier heights, mixing concrete to the correct ratios, bending rebar, and documenting as-built dimensions for a drawing set</li>
+					<li>Lead 30 student team and craft weekly meeting plans while communicating review call deadlines,  writing legal chapter agreements, and helping raise over 20,000 dollars</li>
+					<li>Drafted abutment drawings in AutoCAD and modified anchor positioning to increase freeboard</li>
+				</ul>
+			</div>
+			<div>
+				<h3>SRJC Coding Club</h3>
+				<ul>
+					<li>Used HTML and CSS to build the club website</li>
+				</ul>
+			</div>
+			<h2>Projects</h2>
+			<div>
+				<h3>Holy Health</h3>
+				<ul>
+					<li>Built a website that helps people diet on religious holidays such as Ramadan and Yom Kippur</li>
+					<li>Designed and constructed a user dashboard and about page using HTML, CSS, and Bootstrap</li>
+					<li>Implemented functionality for user login with a Google account using Firebase and Javascript</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Embedded Accelerometer Game</h3>
+				<ul>
+					<li>Mapped tilting of an on-board accelerometer to the horizontal motion of a spaceship avoiding asteroids with button interrupts for a reset button using C, transmitting data through a USB interface</li>
+					<li>Created a random spawn algorithm and collision logic for 8 game objects in Python using Pygame</li>
+				</ul>
+			</div>
+			<div>
+				<h3>Reaction Time Game and Microprocessor</h3>
+				<ul>
+					<li>Drew a 15 state finite state machine for a reaction time game, implemented sequential logic, and validated designs by writing test cases in Verilog, ultimately testing using the DE0-CV FPGA board</li>
+					<li>Designed and implemented a single cycle microprocessor by creating the ALU, register file, decoder, PC, IRAM, and DRAM components using Verilog</li>
+				</ul>
+			</div>
+			<h2>Research Experience</h2>
+			<div>
+				<h3>University of Colorado Boulder, Electrical Engineering Research Intern</h3>
+				<ul>
+					<li>Designed a printed circuit board for a Yagi-Uda antenna transceiver in Autodesk Eagle, placing electrical component pads and making connections to top and ground wires</li>
+					<li>Simulated a 10 director wire antenna design using 4nec2, resulting in a 43.8% increase in the horizontal gain, increasing the efficiency of signal transmission at the 150 MHz frequency</li>
+				</ul>
+			</div>
 	
-	<!--reference is from M. Asker-->
-	<h2>Here's a quote from a reference: </h2>
-	<blockquote>
-		"Working with like-minded and excited individuals like Newt is what makes me happy and they'd be a great addition to any team. Inquisitive, dedicated and with a passion for their craft."
-	</blockquote>
+			<!--reference is from M. Asker-->
+			<h2>Here's a quote from a reference: </h2>
+			<blockquote>
+				"Working with like-minded and excited individuals like Newt is what makes me happy and they'd be a great addition to any team. Inquisitive, dedicated and with a passion for their craft."
+			</blockquote>
 	
-	<h2>Contact Me!</h2>
-	<!--add a action in the form to a php file for storage when have server later-->
-	<form>
-		<label>Name:</label><br>
-		<input type="text" /><br>
-		<label>Email:</label><br>
-		<input type="text" /><br>
-		<label>Message:</label><br>
-		<textarea></textarea><br><br>
-		<input type="submit" onclick="alert('form not working yet uwu')"/>
-	</form>
-	<br>
+			<h2>Contact Me!</h2>
+			<!--add a action in the form to a php file for storage when have server later-->
+			<form>
+				<label>Name:</label><br>
+				<input type="text" /><br>
+				<label>Email:</label><br>
+				<input type="text" /><br>
+				<label>Message:</label><br>
+				<textarea></textarea><br><br>
+				<input type="submit" onclick="alert('form not working yet uwu')"/>
+			</form>
+			<br>
 	
-	<!--click this babyyyy-->
-	<button type="button" onclick="document.getElementById('message').style.color = 'red'">Secret Button</button>
-	<br>
-	<strong id="message" style="color:white;">heck ya :3<strong>
-	</main>
-</body>
-</html>
+			<!--click this babyyyy-->
+			<button type="button" onclick="m=document.getElementById('message');m.style.opacity = m.style.opacity == 1 ? 0 : 1;">Secret Button</button>
+			<br>
+			<strong id="message">heck ya :3<strong>
+			</main>
+		</body>
+		</html>
 
-<!-- tables and lists anywhere? flex and grid css formatting was wrong. added in nav tag. learned about style guide, added responsive layout for page, -->
-<!--next step with w3 tutorials is to add a basic contact form, then do CSS tutorial with bootstrap, then do javascript tutorial if needed for web dev-->
+		<!--for now, the professional experience should look kinda like a website: think angelina's, make max 2 sentences, include organizations, education; decide whether want to separate out volunteer, research, professional, etc-->
+		<!--about section should specify basic background, title (embedded SWE, FPGA engineer, web developer), name, pronouns, from LA, inspiration to why STEM, overview of cornell like linkedin but the one sentence per important activity, perhaps engineering in service of humanity as a theme-->
+		<!--skills should just be listed 2 columns maybe with rounded boxes including logos specifically, all used OR all good at-->
+		<!--projects should include embedded accelerometer game, soil moisture sensor, perhaps this website with desciption and link to project outline. FIGURE OUT FORMATTING!!-->
+		<!--CSS styling for navbar-->
