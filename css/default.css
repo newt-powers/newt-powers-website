@@ -1,5 +1,9 @@
 /* hi */
 
+.hidden {
+	display: none;
+}
+
 body {
 	background-color: lightskyblue;
 	width: 80%;
@@ -7,11 +11,6 @@ body {
 	margin: 0 auto;
 	max-width: 80ch;
 	padding: 0 1.5rem;
-}
-
-#message {
-	opacity:0;
-	transition:all 2s
 }
 
 #career {
@@ -23,21 +22,53 @@ body {
 	background-color: #aaa;
 }
 
+.experience-box {
+	border-style: solid;
+	border-width: small;
+	border-radius: 5px;
+	background-color: #aaa;
+	padding: 1.5rem;
+	margin-top: 2rem;
+}
+
+.experience-title {
+	margin: 0 0 0.5rem;
+}
+
+#under-title {
+	margin-top: 0px;
+}
+
+.experience-position {
+	/*nothing*/
+}
+
+.experience-description {
+	margin: 6px 0 0 -24px;
+}
+
 nav ul {
-	/*remove bullet points */
-	list-style-type: none;
-	/*ul has padding in browsers, eliminate */
-	margin: 0;
-	padding: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #aaa;
+
+}
+#mnuTog ~ nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1s;
+}
+#mnuTog:checked ~ nav {
+    max-height: 3em;
+    transition: all 2s;
 }
 
 nav li {
-	/*display the elements of the navbar on one line*/
-	display: inline;
-	margin: 0;
-	padding: 0;
-	/* eliminate spacing between items */
-	float: left;
+    /* display: inline-flex; */
+    float: left;
+
 }
 
 nav a {
@@ -56,4 +87,15 @@ nav a:hover {
 	background-color: #fff;
 	/*text color*/
 	color: #333;
+}
+
+button {
+	margin: 20px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+}
+
+#message {
+	opacity:0;
+	transition:all 2s;
 }

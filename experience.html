@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!--add descriptive attributes to improve SEO-->
+	<meta charset="UTF-8">
+	<meta name="description" content="Newt Powers' portfolio">
+	<meta name="keywords" content="Electrical Engineering, Software, Hardware, LinkedIn, GitHub, Systems Engineering, Drone, Bridge, Global Development, Programming, Web Development, PCB Design">
+	<meta name="author" content="Newt Powers">
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<!--responsive web design-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Newt Powers</title>
+</head>
+
+<body>
+	<!-- <p style="font-size:30px; text-align:center">engineering in service of humanity<p> -->
+		<!-- <hr> -->
+		<!--navbar with home, about, experience, skills, projects using <nav>, need to set up project directory first-->
+			<header>
+				<h1 style="text-align:center;">Newt Powers</h1>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="experience.html">Experience</a></li>
+						<li><a href="skills.html">Skills</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li><a href="docs/newt-website-resume.pdf" target="_blank">Resume</a></li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<br>
+				<!--list of experiences, bulleted-->
+				<h1 id="career">Career</h1>
+				<h2>Professional Experience</h2>
+				<div class="experience-box" id="under-title">
+					<h3 class="experience-title">NASA</h3>
+					<p class="experience-position">Electrical Engineering Intern</p>
+					<ul class="experience-description">
+						<li>Implement a counting method to calculate and store accelerometer frequencies in 6 registers using VHDL to obtain more precise angle measurements for aeronautics applications</li>
+						<li>Write a script for SPI communication for a binary signal 96 bit MISO transmission to a microcontroller</li>
+					</ul>
+				</div>
+				<div class="experience-box">
+					<h3 class="experience-title">RTX</h3>
+					<p class="experience-position">Systems Engineering Intern</p>
+					<ul class="experience-description">
+						<li>Performed AN/TPY-2 radar simulations utilizing Linux and reported errors to the hardware team</li>
+						<li>Developed a script to plot simulation objects to aid in future regression efforts for 10 deployed radars</li>
+						<li>Analyzed 6 MATLAB script errors to root cause issues to ensure test functionality for future analysts</li>
+					</ul>
+				</div>
+				<h2>Extracurricular Experience</h2>
+				<div class="experience-box" id="under-title">
+					<h3 class="experience-title">Cornell University Autonomous Drone</h3>
+					<p class="experience-position">Electrical Engineering Subteam Member</p>
+					<ul class="experience-description">
+						<li>Breadboarded a motor control rig circuit and wrote a script in C++ that conducted thrust calculations with a potentiometer and an Arduino microcontroller</li>
+						<li>Analyzed a digital signal from a speed controller with an oscilloscope to find flaws in motor initiation</li>
+						<li>Programmed a virtual controller by emulating drone channels and sending data to a Raspberry Pi</li>
+						<li>Write test scripts in Python to test the GPIO pin outs of a Jetson Nano to ensure the correct pitch, yaw, and roll value</li>
+					</ul>
+				</div>
+				<div class="experience-box">
+					<h3 class="experience-title">Cornell Engineers in Action</h3>
+					<p class="experience-position">Project Manager, Quality Control Engineer</p>
+					<ul class="experience-description">
+						<li>Built a 100 meter footbridge in Eswatini, Africa over 6 weeks while measuring tier heights, mixing concrete to the correct ratios, bending rebar, and documenting as-built dimensions for a drawing set</li>
+						<li>Lead 30 student team and craft weekly meeting plans while communicating review call deadlines,  writing legal chapter agreements, and helping raise over 20,000 dollars</li>
+						<li>Drafted abutment drawings in AutoCAD and modified anchor positioning to increase freeboard</li>
+					</ul>
+				</div>
+				<div class="experience-box">
+					<h3 class="experience-title">SRJC Coding Club</h3>
+					<p class="experience-position">Member</p>
+					<ul class="experience-description">
+						<li>Used HTML and CSS to build the club website</li>
+					</ul>
+				</div>
+				<h2>Research Experience</h2>
+				<div class="experience-box" id="under-title">
+					<h3 class="experience-title">University of Colorado Boulder</h3>
+					<p class="experience-position">Electrical Engineering Research Intern</p>
+					<ul class="experience-description">
+						<li>Designed a printed circuit board for a Yagi-Uda antenna transceiver in Autodesk Eagle, placing electrical component pads and making connections to top and ground wires</li>
+						<li>Simulated a 10 director wire antenna design using 4nec2, resulting in a 43.8% increase in the horizontal gain, increasing the efficiency of signal transmission at the 150 MHz frequency</li>
+					</ul>
+				</div>
+				<!--click this babyyyy-->
+				<button type="button" onclick="m=document.getElementById('message'); m.style.opacity = m.style.opacity == 1 ? 0 : 1;">Secret Button</button>
+				<br>
+				<strong id="message">heck ya :3<strong>
+				</main>
+			</body>
+			</html>
+
+			<!--how do you align the bulletpoints with the start of the title/position text because they're out of line and the padding only shows 40 px up to the text, not up to the start of the bulletpoints??-->
+			<!--all of the padding and margin values are hard-coded at the moment, how do you make them responsive?-->
+		
+			<!--for now, the professional experience should look kinda like a website: think angelina's, make max 2 sentences, include organizations, education; decide whether want to separate out volunteer, research, professional, etc-->
+			<!--about section should specify basic background, title (embedded SWE, FPGA engineer, web developer), name, pronouns, from LA, inspiration to why STEM, overview of cornell like linkedin but the one sentence per important activity, perhaps engineering in service of humanity as a theme-->
+			<!--skills should just be listed 2 columns maybe with rounded boxes including logos specifically, all used OR all good at-->
+			<!--projects should include embedded accelerometer game, soil moisture sensor, perhaps this website with desciption and link to project outline. FIGURE OUT FORMATTING!!-->
